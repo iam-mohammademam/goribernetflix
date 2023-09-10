@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/goribernetflix/static/css/main.07a1d001.css",
-    "main.js": "/goribernetflix/static/js/main.38eb034d.js",
+    "main.js": "/goribernetflix/static/js/main.0c9e698f.js",
     "static/media/no_thumbnail.jpg": "/goribernetflix/static/media/no_thumbnail.06308255f3acf75cd37f.jpg",
     "static/media/no_poster.jpg": "/goribernetflix/static/media/no_poster.cbb83d8bf140703e0654.jpg",
     "static/media/logo.png": "/goribernetflix/static/media/logo.b7a7f8c106f21c896e3b.png",
     "static/media/no_result.png": "/goribernetflix/static/media/no_result.5e15da4233c053cb9f34.png",
     "index.html": "/goribernetflix/index.html",
     "main.07a1d001.css.map": "/goribernetflix/static/css/main.07a1d001.css.map",
-    "main.38eb034d.js.map": "/goribernetflix/static/js/main.38eb034d.js.map"
+    "main.0c9e698f.js.map": "/goribernetflix/static/js/main.0c9e698f.js.map"
   },
   "entrypoints": [
     "static/css/main.07a1d001.css",
-    "static/js/main.38eb034d.js"
+    "static/js/main.0c9e698f.js"
   ]
 }
