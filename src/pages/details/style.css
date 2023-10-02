@@ -1,0 +1,24 @@
+.videos::-webkit-scrollbar {
+  display: none;
+}
+.videos {
+  scrollbar-width: none;
+}
+.video_player.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.video_player {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 700px) {
+  .video_player {
+    width: 90%;
+    height: 200px;
+  }
+}
+.video_player {
+  height: 300px;
+}
