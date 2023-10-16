@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/goribernetflix/static/css/main.802d38a1.css",
-    "main.js": "/goribernetflix/static/js/main.cacc70c1.js",
+    "main.css": "/goribernetflix/static/css/main.cf55aee3.css",
+    "main.js": "/goribernetflix/static/js/main.1980b18b.js",
     "static/media/no_thumbnail.jpg": "/goribernetflix/static/media/no_thumbnail.06308255f3acf75cd37f.jpg",
     "static/media/no_poster.jpg": "/goribernetflix/static/media/no_poster.cbb83d8bf140703e0654.jpg",
     "static/media/logo.png": "/goribernetflix/static/media/logo.b7a7f8c106f21c896e3b.png",
     "static/media/no_result.png": "/goribernetflix/static/media/no_result.5e15da4233c053cb9f34.png",
     "index.html": "/goribernetflix/index.html",
-    "main.802d38a1.css.map": "/goribernetflix/static/css/main.802d38a1.css.map",
-    "main.cacc70c1.js.map": "/goribernetflix/static/js/main.cacc70c1.js.map"
+    "main.cf55aee3.css.map": "/goribernetflix/static/css/main.cf55aee3.css.map",
+    "main.1980b18b.js.map": "/goribernetflix/static/js/main.1980b18b.js.map"
   },
   "entrypoints": [
-    "static/css/main.802d38a1.css",
-    "static/js/main.cacc70c1.js"
+    "static/css/main.cf55aee3.css",
+    "static/js/main.1980b18b.js"
   ]
 }
