@@ -17,13 +17,12 @@ const Card = ({ data, mediaType }) => {
     release_date,
     poster_path,
   } = data;
-  // console.log(original_title)
-  // console.log(poster_path)
+
   return (
     <>
       <Link
         to={`/${mediaType ? mediaType : media_type}/${id}`}
-        className="w-2/2 h-100 overflow-hidden border-2"
+        className="w-full h-full overflow-hidden"
       >
         <div className="movie_poster relative w-2/2 overflow-hidden rounded-md">
           <Img

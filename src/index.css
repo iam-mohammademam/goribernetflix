@@ -81,6 +81,7 @@ img {
 .row-gap-3 {
   row-gap: 10px;
 }
+
 /* SWIPER */
 @media (max-width: 700px) {
   .swiper-button-prev {
@@ -89,10 +90,6 @@ img {
   .swiper-button-next {
     right: 0;
   }
-}
-.swiper-pagination-bullet {
-  color: var(--theme-color);
-  background: var(--theme-color);
 }
 
 .banner .swiper-button-prev,

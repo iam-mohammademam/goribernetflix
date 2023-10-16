@@ -30,38 +30,30 @@ const Banner = () => {
 
   return (
     <>
-      <div
-        className={
-          loading
-            ? "h-500 w-screen overflow-hidden bg-color static flex items-center justify-center"
-            : "relative w-screen banner "
-        }
-      >
-        <Img
-          src={loading ? "" : background}
-          alt=""
-          className="object-cover object-center"
-        />
+      <div className="min-[700px]:h-[450px] max-[669px]:h-[250px] w-screen relative flex items-center justify-center banner">
+        <div className="overflow-hidden h-full">
+          <Img
+            src={loading ? "" : background}
+            alt=""
+            className="bg-cover bg-center h-full"
+          />
+        </div>
 
+        <div className="absolute top-0 w-full h-[100%] left-0 bg-black/[0.7]"></div>
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
-          navigation={true}
+          loop={true}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
           }}
-          pagination={{ dynamicBullets: true, clickable: true }}
-          className={
-            loading
-              ? "w-100"
-              : "w-100 px-10 z-10 absolute top-2/4 -translate-y-2/4 left-0 py-10"
-          }
+          className="max-w-[90%] max-h-[90%] overflow-hidden flex items-center justify-center z-10 absolute top-[50%] -translate-y-[50%] left-[50%] translate-x-[-50%]"
         >
           {loading ? (
-            <SwiperSlide className="w-2/2">
-              <div className="md:w-4/5 lg:4/5 w-2/2 md:px-0 lg:px-0 px-5 py-10 mx-auto grid grid-cols-2 ">
+            <SwiperSlide className="w-full my-auto flex items-center justify-center">
+              <div className="md:w-4/5 lg:4/5 w-2/2 mx-auto grid grid-cols-2 place-items-center justify-items-center ">
                 <div className="banner_details w-2/2">
                   <small>
                     <Skeleton width={70} />
@@ -70,7 +62,7 @@ const Banner = () => {
                     <Skeleton count={1.5} />
                   </h1>
                   <small>
-                    <Skeleton count={3.5} />
+                    <Skeleton count={3.5} width={230} />
                   </small>
                   <div className="md:block lg:block hidden">
                     <br />
@@ -84,7 +76,7 @@ const Banner = () => {
                 </div>
                 <div className="banner_img w-2/2">
                   <div className="md:w-2/4 lg:w-2/4 rounded-md w-3/4 lg:mt-16 ml-auto">
-                    <Skeleton height={230} />
+                    <Skeleton height={230} width={160} />
                   </div>
                 </div>
               </div>
@@ -100,10 +92,13 @@ const Banner = () => {
                 vote_average,
               }) => {
                 return (
-                  <SwiperSlide key={id} className="w-2/2">
+                  <SwiperSlide
+                    key={id}
+                    className="w-full my-auto flex items-center justify-center"
+                  >
                     <Link
                       to={`/${"movie"}/${id}`}
-                      className="md:w-4/5 lg:4/5 w-2/2 mx-auto grid grid-cols-2"
+                      className="md:w-4/5 lg:4/5 w-2/2 mx-auto grid grid-cols-2 place-items-center justify-items-center"
                     >
                       <div className="banner_details w-2/2">
                         <small className="flex text-gray-300 items-center">
